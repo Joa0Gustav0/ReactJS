@@ -32,3 +32,12 @@ body {
     border-radius: 10px;
     background-color: rgb(25, 25, 25);
 }
+.point{
+    position: absolute;
+    transform: translate(-50%, -50%);
+
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background-color: #ff0050;
+}
