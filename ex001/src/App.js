@@ -1,20 +1,10 @@
-//import './App.css';
-import './index-style.css';
+import './App.css';
+import displayPicture from './components/DisplayPicture';
 
 function App() {
-  var city = "Aracaju"
+  var city = "Bom Jesus"
 
-  /* window.addEventListener("click", (e) => {
-    const axisX = e.clientX
-    const axisY = e.clientY
-    var newPoint = document.createElement("div")
-    newPoint.className = "point"
-    newPoint.style.top = `${axisY}px`
-    newPoint.style.left = `${axisX}px`
-    document.body.appendChild(newPoint)
-  }) */
-
-  /* const url = "https://api.openweathermap.org/data/2.5/weather?"
+  const url = "https://api.openweathermap.org/data/2.5/weather?"
   const apiKey = "7453c886c1d4cedc457664da1b118841"
 
   async function getData() {
@@ -34,7 +24,8 @@ function App() {
       })
     }
   }
-  getData() */
+  getData()
+  console.log(displayPicture())
 
   return (
     <div className="container">
