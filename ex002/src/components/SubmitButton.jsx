@@ -1,6 +1,6 @@
 function SubmitButton(){
     return (
-        <input type="button" value="Confirmar" />
+        <input type="button" id="confirm-button" value="Confirmar"/>
     )
 }
 
