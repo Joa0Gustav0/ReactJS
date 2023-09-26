@@ -1,13 +1,20 @@
 import styles from './SubmitButton.module.css'
+import { useState } from 'react'
 
 
 function SubmitButton(){
-    function logMessage(){
-        console.log("Confirmado!")
+    const [initialValue, setInitialValue] = useState("Confirmar") 
+
+    const confirm = () => {
+        setInitialValue("Confirmado!")
+    }
+    const resetState = () => {
+        setInitialValue("Confirmar")
     }
     return (
-        <input type="button" className={styles.confirmButton} id="confirm-button" value="Confirmar"
-        onClick={logMessage}/>
+        <input type="button" className={styles.confirmButton} id="confirm-button" value={initialValue}
+        onClick={confirm}
+        onMouseLeave={resetState}/>
     )
 }
 
