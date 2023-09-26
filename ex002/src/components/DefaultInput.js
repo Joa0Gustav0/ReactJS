@@ -1,4 +1,4 @@
-import styles from './DefaultInput.module.css'
+import styles from './styles/DefaultInput.module.css'
 
 function DefaultInput(){
     return (

@@ -1,4 +1,4 @@
-import styles from './SubmitButton.module.css'
+import styles from './styles/SubmitButton.module.css'
 import { useState } from 'react'
 
 

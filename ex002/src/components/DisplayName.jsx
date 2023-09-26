@@ -1,4 +1,4 @@
-import styles from './DisplayName.module.css'
+import styles from './styles/DisplayName.module.css'
 import propTypes from 'prop-types'
 
 export default function DisplayName({name ,currentJob, workingTime}){
