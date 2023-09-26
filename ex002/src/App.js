@@ -6,7 +6,7 @@ import DisplayName from './components/DisplayName';
 function App() {
   return (
     <div className = "container">
-      <DisplayName job="programador"/>
+      <DisplayName name="Gustavo" currentJob="programador" workingTime={3.5}/>
       <DefaultInput />
       <SubmitButton />
     </div>
