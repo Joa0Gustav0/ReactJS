@@ -1,0 +1,22 @@
+.confirmButton{
+  transition: all .1s;
+  border: 0;
+  width: 100%;
+  height: 40px;
+  outline: none;
+  color: white;
+  font-size: 1em;
+  background-color: #0866FF;
+  border-radius: 10px;
+  box-shadow: 0px 0px 0px #074ec0;
+}
+.confirmButton:hover{
+  cursor: pointer;
+  transform: translateY(-5px);
+  box-shadow: 0px 5px 0px #074ec0;
+}
+.confirmButton:active{
+  color: rgba(255, 255, 255, 0.5);
+  transform: translateY(0px);
+  box-shadow: 0px 0px 0px #074ec0;
+}
