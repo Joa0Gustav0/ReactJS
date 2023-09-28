@@ -12,7 +12,7 @@ function SubmitButton(){
     const [name, setName] = useState(null)
     const [job, setJob] = useState(null)
     const [workingTime, setWorkingTime] = useState(null)
-
+    
     const confirm = () => {
         setName(informations.name) 
         setJob(informations.job)
@@ -24,11 +24,11 @@ function SubmitButton(){
     }
     const getData = (e) => {
         //console.log(e.target.id)
-        if (e.target.id == "name"){
+        if (e.target.id === "name"){
             informations.name = e.target.value
-        }else if (e.target.id == "job"){
+        }else if (e.target.id === "job"){
             informations.job = e.target.value
-        }else if (e.target.id == "working-time"){
+        }else if (e.target.id === "working-time"){
             informations.workingTime = e.target.value
         }
     }
