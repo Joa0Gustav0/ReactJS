@@ -6,8 +6,6 @@ import { useState } from 'react'
 
 var informations = {name:null, job:null, workingTime:null}
 
-var registeredUsers = [{name: "Gustavo", job: "Programmer"}]
-
 function SubmitButton(){
     const [initialValue, setInitialValue] = useState("Confirmar") 
 
@@ -15,10 +13,12 @@ function SubmitButton(){
     const [name, setName] = useState(null)
     const [job, setJob] = useState(null)
     const [workingTime, setWorkingTime] = useState(null)
+
+    const [registeredUsers, setRegisteredUsers] = useState([])
     
     const confirm = () => {
         if (informations.name !== null && informations.job !== null){
-            registeredUsers.push({name: informations.name, job: informations.job})
+            setRegisteredUsers([...registeredUsers, {name: informations.name, job: informations.job}])
         }
         setName(informations.name) 
         setJob(informations.job)
