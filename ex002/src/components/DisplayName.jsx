@@ -5,7 +5,6 @@ export default function DisplayName({name ,currentJob, workingTime, testNum}){
     DisplayName.propTypes = {
         name: propTypes.string,
         currentJob: propTypes.string,
-        workingTime: propTypes.number
     }
     return(
         <div>

@@ -1,9 +1,12 @@
 import styles from './styles/SubmitButton.module.css'
 import DefaultInput from './DefaultInput';
 import DisplayName from './DisplayName';
+import UserList from './UsersList';
 import { useState } from 'react'
 
 var informations = {name:null, job:null, workingTime:null}
+
+var registeredUsers = [{name: "Gustavo", job: "Programmer"}]
 
 function SubmitButton(){
     const [initialValue, setInitialValue] = useState("Confirmar") 
@@ -14,6 +17,9 @@ function SubmitButton(){
     const [workingTime, setWorkingTime] = useState(null)
     
     const confirm = () => {
+        if (informations.name !== null && informations.job !== null){
+            registeredUsers.push({name: informations.name, job: informations.job})
+        }
         setName(informations.name) 
         setJob(informations.job)
         setWorkingTime(informations.workingTime)  
@@ -44,6 +50,7 @@ function SubmitButton(){
             <input type="button" className={styles.confirmButton} id="confirm-button" value={initialValue}
             onClick={confirm}
             onMouseLeave={resetState}/>
+            <UserList usersArray={registeredUsers}/>
         </>
     )
 }
