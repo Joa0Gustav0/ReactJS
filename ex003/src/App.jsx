@@ -15,10 +15,11 @@ function App() {
     <div className={styles.projectsContainer}>
       {
         projects.map((project) => (
-          <Link className={styles.links} to={project.link}>
+          <Link key={project.name} className={styles.projects} to={project.link}>
             <ion-icon name="image"></ion-icon>
-              <h1>{project.name}</h1>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt itaque quasi minus, sed magni molestias, deserunt veniam soluta id iure in aliquid ut fugit ea animi, et ipsa esse. Quaerat.</p>
+            <h1>{project.name}</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt itaque quasi minus, sed magni molestias, deserunt veniam soluta id iure in aliquid ut fugit ea animi, et ipsa esse. Quaerat.</p>
+            <ion-icon name="search"></ion-icon>
           </Link>
         ))
       }
